@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SwiftUITemplateApp: App {
+
+    static let viewModelFactory: ViewModelFactory = ConcreteViewModelFactory(
+        appDependencyProvider: AppDependencyProvider()
+    )
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DeeplinkCoordinator(viewModelFactory: SwiftUITemplateApp.viewModelFactory)
         }
     }
 }

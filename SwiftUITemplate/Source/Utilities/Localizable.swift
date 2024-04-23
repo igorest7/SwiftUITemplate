@@ -1,0 +1,16 @@
+struct Localizable {
+    static let additionalDetailsTitle = String(localized: "additionalDetailsTitle")
+    static let backButtonTitle = String(localized: "backButtonTitle")
+    static let mainMenuDataTextEmpty = String(localized: "mainMenuDataTextEmpty")
+    static let mainMenuDataTextLoading = String(localized: "mainMenuDataTextLoading")
+    static let mainMenuDataTextNotLoaded = String(localized: "mainMenuDataTextNotLoaded")
+    static let mainMenuDataTextPrefix = String(localized: "mainMenuDataTextPrefix")
+    static let mainMenuDetailsButtonTitle = String(localized: "mainMenuDetailsButtonTitle")
+    static let mainMenuOpenURLButtonTitle = String(localized: "mainMenuOpenURLButtonTitle")
+    static let mainMenuSheetButtonTitle = String(localized: "mainMenuSheetButtonTitle")
+    static let mainMenuTitle = String(localized: "mainMenuTitle")
+    static let mainMenuRefreshButtonTitle = String(localized: "mainMenuRefreshButtonTitle")
+    static let networkRequestFailedDescription = String(localized: "networkRequestFailedDescription")
+    static let openAdditionalDetailsButtonTitle = String(localized: "openAdditionalDetailsButtonTitle")
+    static let openMainMenuButtonTitle = String(localized: "openMainMenuButtonTitle")
+}
