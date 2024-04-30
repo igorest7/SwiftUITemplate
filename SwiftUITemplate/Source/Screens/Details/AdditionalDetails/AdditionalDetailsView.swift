@@ -7,11 +7,9 @@ struct AdditionalDetailsView: View {
     var body: some View {
         VStack(spacing: 30) {
             Text(viewModel.pageTitle)
-                .foregroundColor(.mainCustom)
-                .font(.fontWith(format: .title))
+                .modifier(Title())
             Button(viewModel.mainMenuButtonTitle, action: viewModel.mainMenuTapped)
-                .foregroundColor(.textCustom)
-                .font(.fontWith(format: .button))
+                .buttonStyle(StandardButton())
         }
     }
 }

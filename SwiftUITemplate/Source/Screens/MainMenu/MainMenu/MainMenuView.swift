@@ -7,25 +7,19 @@ struct MainMenuView: View {
     var body: some View {
         VStack(spacing: 30) {
             Text(viewModel.pageTitle)
-                .foregroundColor(.mainCustom)
-                .font(.fontWith(format: .title))
+                .modifier(Title())
             Text(viewModel.dataText)
-                .foregroundColor(.textCustom)
-                .font(.fontWith(format: .body))
+                .modifier(Title())
             Button(viewModel.openDetailsButtonTitle, action: viewModel.openDetailsTapped)
-                .foregroundColor(.textCustom)
-                .font(.fontWith(format: .button))
+                .buttonStyle(StandardButton())
             Button(viewModel.openSheetButtonTitle, action: viewModel.openSheetTapped)
-                .foregroundColor(.textCustom)
-                .font(.fontWith(format: .button))
+                .buttonStyle(StandardButton())
             Button(viewModel.refreshDetailsButtonTitle, action: viewModel.refreshTapped)
-                .foregroundColor(.textCustom)
-                .font(.fontWith(format: .button))
+                .buttonStyle(StandardButton())
             Button(viewModel.openURLButtonTitle) {
-                UIApplication
-                    .shared
-                    .open(URL(string: "details://openDetails?title=url%20opened")!)
+                UIApplication.shared.open(URL(string: "details://openDetails?title=url%20opened") ?? URL(filePath: ""))
             }
+            .buttonStyle(StandardButton())
         }
     }
 }
