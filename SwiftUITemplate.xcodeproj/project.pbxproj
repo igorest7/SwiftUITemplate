@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C08BE4A2BDE3AE20035459A /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08BE492BDE3AE20035459A /* StandardButton.swift */; };
 		5C08BE4D2BDE3D4F0035459A /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08BE4C2BDE3D4F0035459A /* Title.swift */; };
+		5C1D0AF52BE1051E00B0EC74 /* RemoteTodoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D0AF42BE1051E00B0EC74 /* RemoteTodoServiceTests.swift */; };
+		5C1D0AF82BE12C3A00B0EC74 /* MockDataPublisherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D0AF72BE12C3A00B0EC74 /* MockDataPublisherProvider.swift */; };
 		5C9F0B922BCEDB3F00199C8A /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0B912BCEDB3F00199C8A /* MainMenuView.swift */; };
 		5C9F0B962BCEDB8900199C8A /* MainMenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0B952BCEDB8900199C8A /* MainMenuCoordinator.swift */; };
 		5C9F0B982BCEDD1E00199C8A /* ConcreteMainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0B972BCEDD1E00199C8A /* ConcreteMainMenuViewModel.swift */; };
@@ -81,6 +83,8 @@
 /* Begin PBXFileReference section */
 		5C08BE492BDE3AE20035459A /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		5C08BE4C2BDE3D4F0035459A /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		5C1D0AF42BE1051E00B0EC74 /* RemoteTodoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTodoServiceTests.swift; sourceTree = "<group>"; };
+		5C1D0AF72BE12C3A00B0EC74 /* MockDataPublisherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataPublisherProvider.swift; sourceTree = "<group>"; };
 		5C9F0B912BCEDB3F00199C8A /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		5C9F0B952BCEDB8900199C8A /* MainMenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCoordinator.swift; sourceTree = "<group>"; };
 		5C9F0B972BCEDD1E00199C8A /* ConcreteMainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteMainMenuViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +173,31 @@
 				5C08BE4C2BDE3D4F0035459A /* Title.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		5C1D0AF62BE12C2800B0EC74 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5C9F0C192BD8586200199C8A /* MockTodoService.swift */,
+				5C9F0C1A2BD8586200199C8A /* TodoBuilder.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5C1D0AF92BE12C3D00B0EC74 /* DataPublisherProvider */ = {
+			isa = PBXGroup;
+			children = (
+				5C1D0AFA2BE12C4A00B0EC74 /* Mocks */,
+			);
+			path = DataPublisherProvider;
+			sourceTree = "<group>";
+		};
+		5C1D0AFA2BE12C4A00B0EC74 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5C1D0AF72BE12C3A00B0EC74 /* MockDataPublisherProvider.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		5C9F0B8E2BCED9F700199C8A /* App */ = {
@@ -451,6 +480,7 @@
 		5C9F0C172BD8586200199C8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5C1D0AF92BE12C3D00B0EC74 /* DataPublisherProvider */,
 				5C9F0C182BD8586200199C8A /* TodoService */,
 			);
 			path = Services;
@@ -459,8 +489,8 @@
 		5C9F0C182BD8586200199C8A /* TodoService */ = {
 			isa = PBXGroup;
 			children = (
-				5C9F0C192BD8586200199C8A /* MockTodoService.swift */,
-				5C9F0C1A2BD8586200199C8A /* TodoBuilder.swift */,
+				5C1D0AF62BE12C2800B0EC74 /* Mocks */,
+				5C1D0AF42BE1051E00B0EC74 /* RemoteTodoServiceTests.swift */,
 			);
 			path = TodoService;
 			sourceTree = "<group>";
@@ -703,6 +733,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C9F0C1B2BD8586200199C8A /* ConcreteMainMenuViewModelTests.swift in Sources */,
+				5C1D0AF82BE12C3A00B0EC74 /* MockDataPublisherProvider.swift in Sources */,
+				5C1D0AF52BE1051E00B0EC74 /* RemoteTodoServiceTests.swift in Sources */,
 				5C9F0C1D2BD8586200199C8A /* TodoBuilder.swift in Sources */,
 				5C9F0C1C2BD8586200199C8A /* MockTodoService.swift in Sources */,
 			);

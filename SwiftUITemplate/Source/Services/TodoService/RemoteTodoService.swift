@@ -13,11 +13,11 @@ class RemoteTodoService: TodoService {
 
     func fetchTodos() -> AnyPublisher<[Todo], TodoServiceError> {
         dataPublisherProvider.dataPublisher(for: baseURL)
-                    .map(\.data)
-                    .decode(type: [Todo].self, decoder: JSONDecoder())
-                    .mapError { _ in
-                        TodoServiceError.requestFailed
-                    }
-                    .eraseToAnyPublisher()
+            .map(\.data)
+            .decode(type: [Todo].self, decoder: JSONDecoder())
+            .mapError { _ in
+                TodoServiceError.requestFailed
+            }
+            .eraseToAnyPublisher()
     }
 }
