@@ -1,3 +1,7 @@
+#if TEST
+@testable import SwiftUITemplate
+#endif
+
 struct MockMainMenuViewModel: MainMenuViewModel {
 
     var dataText: String

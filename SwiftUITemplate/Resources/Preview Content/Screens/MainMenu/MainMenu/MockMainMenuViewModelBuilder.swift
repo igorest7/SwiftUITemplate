@@ -1,3 +1,7 @@
+#if TEST
+@testable import SwiftUITemplate
+#endif
+
 class MockMainMenuViewModelBuilder {
     var dataText = ""
     var pageTitle = ""
