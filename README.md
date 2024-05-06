@@ -16,6 +16,8 @@ There is a sister project for UIKit that does the same thing [here](https://gith
 
 ### MVVM-C
 
+![Diagram](Template%20architecture.png)
+
 Navigation logic is designed to be isolated from the views and viewModels. This is achieved by containing it in the Coordinators. Usually apps are split into separate user journeys that can contain any number of screens. Coordinators follow that structure except for the first one. That is the DeeplinkCoordinator to facilitate navigating to arbitrary screens after opening deeplinks. 
 
 In this app the MainMenuCoordinator is a single view coordinator but the DetailsCoordinator contains two different views with navigation happening both between individual screens and different user journeys.
