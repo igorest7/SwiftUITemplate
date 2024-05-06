@@ -133,17 +133,6 @@
         }
       }
     },
-    "Open details using url" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open details using url"
-          }
-        }
-      }
-    },
     "openAdditionalDetailsButtonTitle" : {
       "extractionState" : "manual",
       "localizations" : {

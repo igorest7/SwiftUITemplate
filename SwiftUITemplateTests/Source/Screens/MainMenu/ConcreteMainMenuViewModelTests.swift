@@ -2,7 +2,7 @@ import Combine
 @testable import SwiftUITemplate
 import XCTest
 
-class MainMenuViewModelTests: XCTestCase {
+class ConcreteMainMenuViewModelTests: XCTestCase {
 
     private var viewModel: ConcreteMainMenuViewModel!
     private var todoService: MockTodoService!
