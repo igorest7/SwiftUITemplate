@@ -18,7 +18,7 @@ import Foundation
     }
 
     func additionalDetailsTapped() {
-        router.routingPublisher.send(.additionalDetails)
+        router.routingPublisher.send(.additionalDetails(pageTitle: Localizable.additionalDetailsTitle))
     }
 
 }

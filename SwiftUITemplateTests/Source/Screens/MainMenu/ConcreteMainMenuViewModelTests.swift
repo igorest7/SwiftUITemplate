@@ -25,7 +25,7 @@ class ConcreteMainMenuViewModelTests: XCTestCase {
         viewModel = ConcreteMainMenuViewModel(router: router, todoService: todoService)
     }
 
-    func test_init_SetsNotLoadedDatString() {
+    func test_init_SetsNotLoadedDataString() {
         XCTAssertEqual(viewModel.dataText, Localizable.mainMenuDataTextNotLoaded)
     }
 

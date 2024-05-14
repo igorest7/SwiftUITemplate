@@ -277,9 +277,9 @@
 		5C9F0BB52BD3192100199C8A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5C9F0BB92BD3192100199C8A /* Color.swift */,
 				5C9F0BB72BD3192100199C8A /* Font.swift */,
 				5C9F0BB82BD3192100199C8A /* Localizable.swift */,
-				5C9F0BB92BD3192100199C8A /* Color.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -296,10 +296,10 @@
 		5C9F0BBF2BD3193400199C8A /* TodoService */ = {
 			isa = PBXGroup;
 			children = (
-				5C9F0BC02BD3193400199C8A /* TodoServiceError.swift */,
 				5C9F0BC12BD3193400199C8A /* RemoteTodoService.swift */,
-				5C9F0BC22BD3193400199C8A /* TodoService.swift */,
 				5C9F0BC32BD3193400199C8A /* Todo.swift */,
+				5C9F0BC22BD3193400199C8A /* TodoService.swift */,
+				5C9F0BC02BD3193400199C8A /* TodoServiceError.swift */,
 			);
 			path = TodoService;
 			sourceTree = "<group>";

@@ -1,5 +1,3 @@
-import SwiftUI
-
 protocol BasicDetailsViewModelFactory {
 
     func buildBasicDetailsViewModel(with router: DetailsRouter, pageTitle: String) -> ConcreteBasicDetailsViewModel

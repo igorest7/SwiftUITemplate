@@ -21,7 +21,7 @@ struct DetailsCoordinator: View {
         )
         .navigationDestination(for: DetailsRouter.Route.self) { route in
             switch route {
-            case .additionalDetails: additionalDetailsDestination()
+            case .additionalDetails(let pageTitle): additionalDetailsDestination(pageTitle: pageTitle)
             case .back, .closeJourney:
                 EmptyView()
             }
@@ -39,10 +39,10 @@ struct DetailsCoordinator: View {
         }
     }
 
-    private func additionalDetailsDestination() -> some View {
+    private func additionalDetailsDestination(pageTitle: String) -> some View {
         AdditionalDetailsView(
             viewModel: viewModelFactory.buildAdditionalDetailsViewModel(
-                with: router, pageTitle: basicDetailsPageTitle
+                with: router, pageTitle: pageTitle
             )
         )
         .navigationBarBackButtonHidden(true)
